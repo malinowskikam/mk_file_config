@@ -1,0 +1,16 @@
+[package]
+name = "mk_file_config"
+version = "0.1.0"
+edition = "2021"
+description = "A simple library to make a file config from serializable structs"
+readme = "README.md"
+
+[features]
+default = []
+derive = ["dep:mk_file_config_derive"]
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_yaml = "^0.9"
+mk_file_config_core = { path = "../mk_file_config_core" }
+mk_file_config_derive = { path = "../mk_file_config_derive", optional = true }

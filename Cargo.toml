@@ -1,12 +1,8 @@
-[package]
-name = "mk_file_config"
-version = "0.1.0"
-edition = "2021"
-description = "A simple library to make a file config from serializable structs"
-readme = "README.md"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+resolver = "2"
 
-[dependencies]
-anyhow = "1.0"
-serde = { version = "1.0", features = ["derive"] }
-serde_yaml = "0.9"
+members = [
+    "mk_file_config",
+    "mk_file_config_derive",
+    "mk_file_config_core"
+]

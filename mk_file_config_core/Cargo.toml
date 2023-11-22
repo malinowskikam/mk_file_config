@@ -1,0 +1,11 @@
+[package]
+name = "mk_file_config_core"
+version = "0.1.0"
+edition = "2021"
+description = "Core library for mk_file_config"
+readme = "README.md"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+thiserror = "1.0.24"

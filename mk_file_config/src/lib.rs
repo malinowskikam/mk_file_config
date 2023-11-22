@@ -5,8 +5,6 @@ pub use mk_file_config_derive::FileConfig;
 #[cfg(feature = "derive")]
 #[test]
 fn test_derive_simple() {
-    use std::fs::File;
-
     use serde::{Deserialize, Serialize};
 
     #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]

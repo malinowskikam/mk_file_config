@@ -1,2 +1,2 @@
-# workspace
-A simple library to make a file config from serializable structs
+# mk_file_config
+A simple library to make a file config from serializable structs with minimal derive macro
